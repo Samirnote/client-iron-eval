@@ -7,7 +7,7 @@ import RandomDetails from "./components/pages/RandomDetails";
 import Details from "./components/pages/Details";
 import HeaderMain from "./components/layout/HeaderMain";
 import Form from "./components/pages/Form";
-
+import SearchPage from "./components/pages/SearchPage";
 import "./styles/App.css";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
 			<main className="content-main">
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/search" element={<SearchPage />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/list" element={<List />} />
 					<Route path="/details/random" element={<RandomDetails />} />
